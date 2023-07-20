@@ -1,0 +1,331 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Neutra2Text Book, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+nav {
+    background: #634832;
+    height: 80px;
+    width: 100%;
+}
+
+.text-logo {
+    position: absolute;
+    width: 180px;
+    height: 77px;
+    margin-left: 30px;
+    background: url(text-logo.png) no-repeat;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+a.active,
+a:hover {
+    background: #B58E65;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 30px;
+        color: #311B15;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #ECE0D1;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: #B58E65;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+nav {
+    display: flex;
+  }
+  
+  .dropdown {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-right: 20px;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    right: 0;
+    margin-left: 0px; /* Adjust this value as needed */
+    background-color: #634832;
+    font-family: Poppins,sans-serif;
+  }
+
+  .input-group {
+    max-width: 400px; /* Set a fixed width for the input group */
+    margin: 20px; /* Add margin as needed */
+  }
+  
+  
+  .form-control {
+    flex: 1; /* This will make the input element take available width */
+    border-top-right-radius: 0; /* Adjust this value if needed */
+    border-bottom-right-radius: 0; /* Adjust this value if needed */
+  }
+  
+  .input-group-btn {
+    border-top-left-radius: 0; /* Adjust this value if needed */
+    border-bottom-left-radius: 0; /* Adjust this value if needed */
+  }
+
+  .button {
+    border:none;
+    background-color: #634832;
+  }
+
+  .button:hover{
+    background-color: #311B15;
+  }
+
+  .filter {
+    background-color: #634832;
+  }
+
+  .dropdown-item {
+    color: white;
+  }
+
+  .secondlogo{
+    margin: 50px 100px;
+    width: 322px;
+    height: 298px;
+    background: url(logo.png)no-repeat;
+    }
+    
+    .Contact-Us{
+    font-family: 'Istok Web',sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 28px;
+    line-height: 69px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 50px;
+    }
+    
+    .footerinfo1{
+    font-family: 'Istok Web',sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    }
+    
+    .footerinfo2 {
+    width: 700px;
+    height: 85px;
+    left: 500px;
+    top: 250px;
+    font-family: 'Istok Web', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    
+    color: #FFFFFF;
+    }
+    
+    .line {
+    border: 1px solid #FFFFFF;
+    }
+    
+    .fb{
+    background: url(fbwhite.png) no-repeat;
+    width: 48px;
+    height: 48px;
+    left: 500px;
+    top: 340px;
+    margin-top: 15px;
+    margin-left: 5px;
+    }
+    
+    .ig{
+    background: url(igwhite.png) no-repeat;
+    width: 48px;
+    height: 48px;
+    left: 550px;
+    top: 340px;
+    margin-left: 55px;
+    margin-top: -47px;
+    }
+    
+    .twitter{
+    background: url(twitterwhite.png) no-repeat;
+    width: 48px;
+    height: 48px;
+    left: 600px;
+    top: 343px; 
+    margin-left: 110px;
+    margin-top: -45px;
+    }
+
+    .fordev{
+        margin-top: 55px;
+        margin-left: 60px;
+        font-family: 'Istok Web', sans-serif;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 28px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+        }
+        
+        .fordev-info{
+        font-family: 'Istok Web', sans-serif;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 20px;
+        line-height: 45px;
+        color: #FFFFFF;
+        margin-left: 25px;
+        }
+        
+        .fordev-info li {
+            list-style-type: disc;
+          }
+          
+        
+        .Note {
+        font-family: 'Istok Web', sans-serif;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 21px;
+        line-height: 69px;
+        color: #FFFFFF;
+        margin-left: 70px;
+        }
+
+
+@media (max-width: 1200px) {
+    /* CSS rules here will be applied for screens <= 768px */
+    .order-button {
+        margin: 20px;
+    }
+}
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; /* Optional: Adjust the margin as needed */
+  display: none;
+}
+
+th {
+    font-size: 20px;
+    vertical-align: middle;
+    color: #ECE0D1;
+    text-align: center;
+}
+
+td {
+    vertical-align: middle;
+}
+
+.dateEdit {
+    height: 52px;
+    width: 180px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}

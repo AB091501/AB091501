@@ -1,0 +1,384 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Neutra2Text Book, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+nav {
+    background: #634832;
+    height: 80px;
+    width: 100%;
+}
+
+.text-logo {
+    position: absolute;
+    width: 180px;
+    height: 77px;
+    margin-left: 30px;
+    background: url(text-logo.png) no-repeat;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+a.active,
+a:hover {
+    background: #B58E65;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 30px;
+        color: #311B15;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #ECE0D1;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: #B58E65;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+body {
+    background: #ECE0D1;
+}
+
+.bgpaymentpic {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    left: 0px;
+    top: 80px;
+    background: url(bgpaymentpic.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #311B15;
+}
+
+.checkout-title {
+    margin: 100px;
+    background: #634832;
+    mix-blend-mode: darken;
+    opacity: 0.9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    width: 500px;
+    height: 100px;
+    margin: 80px auto;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 100px;
+    text-align: center;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    border: 3px solid #FFFFFF;
+    backdrop-filter: blur(2px);
+}
+
+.billing {
+    color: #634832;
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    left: 250px;
+    margin: 20px 2px;
+    top: 300px;
+}
+
+.line {
+
+    height: 2px;
+    background: #634832;
+    margin-bottom: 30px;
+    margin-top: -5px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+    font-family: Poppins, sans-serif;
+}
+
+.order-label {
+    color: #634832;
+    margin: 20px;
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.line-2 {
+    margin-left: 100px;
+    height: 2px;
+    background: #634832;
+
+}
+
+.order-table {
+    margin: 20px;
+}
+
+
+.bayad {
+    margin-left: 20px;
+    font-family: Poppins, sans-serif;
+}
+
+.privacy {
+color: #000;
+font-family: Poppins, sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-left: 20px;
+margin-top: 20px;
+}
+
+.order-button {
+    margin-left: 743px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+
+.order-button:hover {
+    box-shadow: 0 0 10px #634832;
+}
+
+
+.secondlogo{
+    margin: 50px 100px;
+    width: 322px;
+    height: 298px;
+    background: url(logo.png)no-repeat;
+    }
+    
+    .Contact-Us{
+    font-family: 'Istok Web',sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 28px;
+    line-height: 69px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 50px;
+    }
+    
+    .footerinfo1{
+    font-family: 'Istok Web',sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    }
+    
+    .footerinfo2 {
+    width: 700px;
+    height: 85px;
+    left: 500px;
+    top: 250px;
+    font-family: 'Istok Web', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    
+    color: #FFFFFF;
+    }
+    
+    .line {
+    border: 1px solid #FFFFFF;
+    }
+    
+    .fb{
+    background: url(fbwhite.png) no-repeat;
+    width: 48px;
+    height: 48px;
+    left: 500px;
+    top: 340px;
+    margin-top: -15px;
+    margin-left: 5px;
+    }
+    
+    .ig{
+    background: url(igwhite.png) no-repeat;
+    width: 48px;
+    height: 48px;
+    left: 550px;
+    top: 340px;
+    margin-left: 55px;
+    margin-top: -47px;
+    }
+    
+    .twitter{
+    background: url(twitterwhite.png) no-repeat;
+    width: 48px;
+    height: 48px;
+    left: 600px;
+    top: 343px; 
+    margin-left: 110px;
+    margin-top: -45px;
+    }
+
+    .fordev{
+        margin-top: 55px;
+        margin-left: 60px;
+        font-family: 'Istok Web', sans-serif;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 28px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+        }
+        
+        .fordev-info{
+        font-family: 'Istok Web', sans-serif;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 20px;
+        line-height: 45px;
+        color: #FFFFFF;
+        margin-left: 25px;
+        }
+        
+        .fordev-info li {
+            list-style-type: disc;
+          }
+          
+        
+        .Note {
+        font-family: 'Istok Web', sans-serif;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 21px;
+        line-height: 69px;
+        color: #FFFFFF;
+        margin-left: 70px;
+        }
+
+
+@media (max-width: 1200px) {
+    /* CSS rules here will be applied for screens <= 768px */
+    .order-button {
+        margin: 20px;
+    }
+}
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; /* Optional: Adjust the margin as needed */
+  display: none;
+}

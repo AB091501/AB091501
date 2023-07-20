@@ -1,0 +1,532 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    /*list-style: none;*/
+    box-sizing: border-box;
+}
+
+body{
+  font-family: Neutra2Text Book,sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+nav{
+   background: #634832;
+   height: 80px;
+   width: 100%;
+}
+
+.text-logo {
+  position: absolute;
+  width: 180px;
+  height: 77px;
+  margin-left: 30px;
+  background: url(text-logo.png) no-repeat;  
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px; 
+}
+
+nav ul li{
+    display:inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color:white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,a:hover{
+    background: #B58E65;
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+
+ 
+
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 30px;
+      color: #311B15;
+      font-weight: bold;
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #ECE0D1;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #B58E65;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+  
+  .child-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 556px;
+    left: 0px;
+    top: 80px;
+    background: url(beans.png) no-repeat;
+    background-size: cover;
+  }
+  
+.slogan {
+  position: absolute;
+  width: 100%;
+  height: 63px;
+  left: 0px;
+  top: 320px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 77px;
+  text-align: center;
+  color: #ECE0D1;
+  
+  mix-blend-mode: screen;
+}
+
+.store-title {
+  width: 1642px;
+  height: 270px;
+  left: 564px;
+  top: 300px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 180px;
+  line-height: 150px;
+  /* identical to box height */
+  text-align: center;
+  color: #F8F9F5;
+  mix-blend-mode: screen;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+.child-2 {
+  display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+position: absolute;
+width: 100%;
+height: 857px;
+left: 0px;
+top: 636px;
+background: url(ourstory.png) no-repeat;
+background-size: cover;
+background-position: center;
+}
+
+.OurStory {
+  position: absolute;
+  width: 100%;
+  height: 63px;
+  left: 0px;
+  top: 320px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 180px;
+  line-height: 77px;
+  text-align: center;
+  color:  #F8F9F5;
+  mix-blend-mode: screen;
+}
+
+
+.LearnMore {
+  background: #634832;
+  border-radius: 50px;
+  position: absolute;
+  width: 470px;
+  height: 116px;
+  left: 50%;
+  top: 500px;
+  font-family: 'Istok Web';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 92px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  padding: 10px 30px; /* Add padding */
+  transform: translate(-50%);
+}
+
+.Box1 {
+  position: absolute;
+  width: 50%;
+  height: 850px;
+  left: 0px;
+  top: 1485px;
+  background: url(shopbg.jpg) no-repeat;
+  background-size: cover;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+
+.SHOP{
+position: absolute;
+width: 528px;
+height: 246px;
+left: 25%;
+top: 1700px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 180px;
+line-height: 270px;
+transform: translate(-50%);
+
+color: #F8F9F5;
+
+mix-blend-mode: screen;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.Box2 {
+    position: absolute;
+    width: 50%;
+    height: 850px;
+    right: 0px;
+    top: 1485px;
+    background: url(locationbg.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.OurFlavors {
+position: absolute;
+background: #634832;
+border-radius: 50px;
+position: absolute;
+width: 360px;
+height: 116px;
+left: 24%;
+top: 1950px;
+font-family: 'Istok Web';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 92px;
+display: flex;
+align-items: center;
+text-align: center;
+padding: 10px 30px;
+color: #FFFFFF;
+transform: translate(-50%);
+mix-blend-mode: normal;
+}
+
+.LOCATION {
+  position: absolute;
+  width: 900px;
+  height: 270px;
+  left: 75%;
+  top: 1700px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 180px;
+  line-height: 270px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #F8F9F5;
+  transform: translate(-50%);
+  mix-blend-mode: screen;
+}
+
+.Details {
+ 
+  background: #634832;
+  border-radius: 50px;
+  position: absolute;
+width: 520px;
+height: 116px;
+left: 75%;
+top: 1950px;
+
+font-family: 'Istok Web';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 92px;
+display: flex;
+align-items: center;
+text-align: center;
+padding: 10px 30px;
+color: #FFFFFF;
+transform: translate(-50%);
+mix-blend-mode: normal;
+}
+
+.OurFlavors {
+  position: absolute;
+  background: #634832;
+  border-radius: 50px;
+  position: absolute;
+  width: 360px;
+  height: 116px;
+  left: 24%;
+  top: 1950px;
+  font-family: 'Istok Web';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 92px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 10px 30px;
+  color: #FFFFFF;
+  transform: translate(-50%);
+  mix-blend-mode: normal;
+  }
+
+  footer{
+    background: #634832;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    left: 0px;
+    top: 2300px; 
+    BOTTOM: 0px;
+    
+  }
+  
+  .secondlogo{
+  position: absolute;
+  width: 322px;
+  height: 298px;
+  left: 132px;
+  top: 40px;
+  background: url(logo.png)no-repeat;
+  
+  }
+  
+  .Contact-Us{
+  position: absolute;
+  width: 417px;
+  height: 149px;
+  left: 500px;
+  top: 0px;
+  font-family: 'Istok Web',sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 28px;
+  line-height: 69px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  }
+  
+  .footerinfo1{
+  position: absolute;
+  width: 400px;
+  height: 268px;
+  left: 500px;
+  top: 50px;
+  font-family: 'Istok Web',sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  
+  color: #FFFFFF;
+  }
+  
+  .footerinfo2 {
+  position: absolute;
+  width: 700px;
+  height: 85px;
+  left: 500px;
+  top: 250px;
+  
+  font-family: 'Istok Web', sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 45px;
+  display: flex;
+  align-items: center;
+  
+  color: #FFFFFF;
+  }
+  
+  .line {
+  position: absolute;
+  width: 350px;
+  height: 0px;
+  left: 500px;
+  top: 320px;
+  border: 1px solid #FFFFFF;
+  }
+  
+  .footerfb{
+  background: url(fbwhite.png) no-repeat;
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 500px;
+  top: 340px;
+  
+  }
+  
+  .footerig{
+  background: url(igwhite.png) no-repeat;
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 550px;
+  top: 340px; 
+  }
+  
+  .footertwitter{
+  background: url(twitterwhite.png) no-repeat;
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 600px;
+  top: 343px; 
+  }
+  
+  .fordev{
+  position: absolute;
+  width: 417px;
+  height: 149px;
+  left: 1100px;
+  top: 0px;
+  font-family: 'Istok Web', sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 28px;
+  line-height: 69px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  
+  }
+  
+  .fordev-info{
+  position: absolute;
+  width: 700px;
+  height: 200px;
+  left: 1100px;
+  top: 110px;
+  font-family: 'Istok Web', sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 45px;
+  color: #FFFFFF;
+  
+  }
+  
+  .Note {
+  position: absolute;
+  width: 500px;
+  height: 50px;
+  left: 1100px;
+  top: 300px;
+  font-family: 'Istok Web', sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 21px;
+  line-height: 69px;
+  color: #FFFFFF;
+  
+  }
+
+.LearnMore:hover {
+  color:rgba(99, 72, 50, 1);
+  background-color: 	#F9F6EE;
+  animation: 0.5s;
+}
+
+.OurFlavors:hover {
+  color:rgba(99, 72, 50, 1);
+  background-color: 	#F9F6EE;
+  animation: 0.5s;
+}
+
+.Details:hover {
+  color:rgba(99, 72, 50, 1);
+  background-color: 	#F9F6EE;
+  animation: 0.5s;
+}
