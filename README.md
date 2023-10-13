@@ -1,32 +1,70 @@
+# Regex Tutorial: MATCHING AN HTML TAG 
 
-# Tutorial: Regex matching Hex value
-
-Regular expressions are patterns used to match character combinations in strings. In a regular expression the metacharacter ^ means "not". So, while "a" means "match lowercase a", "^a" means "do not match lowercase a".
+In this tutorial, we will learn how to use a regular expression (regex) to match an HTML tag. HTML tags are fundamental elements in web development, and understanding how to match them using regex can be a powerful tool.
 
 ## Summary
-Today I will be covering and breaking down the components of a regular expression used to match Hex Values. Hexadecimal code is a system by which any specific color can be described accurately to a computer, ensuring consistency and accuracy in an electronic display. A hexadecimal color value is a six-digit code preceded by a # sign; it defines a color that is used in a website or a computer program.
-/^#?([a-f0-9]{6}|[a-f0-9]{3})$/
+Today I will be covering and breaking down the components of a regular expression used to match HTML tag. HTML tags are used to structure the content of a web page. They consist of an opening tag, content, and a closing tag. Matching HTML tags with regex can be useful for parsing and extracting data from web pages or validating HTML content.
+/^<([a-z]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$/
 
 ## Table of Contents
 
-- [Back-references](#back-references)
-- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
+- [The HTML Tag Structure](#the-html-tag-structure)
 - [Greedy and Lazy Match](#greedy-and-lazy-match)
 
 ## Regex Components
 
-### Back-references
 
-Back references How do back references appear? Typically, a single-digit is followed by a backslash (\). A command known as a "back-reference" refers to an event that has already occurred or a previous portion of a matched regular phrase. In essence, you are referring to a named group and would have a pillow/and a G then the name of that group, for example. You may make a better choice by name or number.
+### The HTML Tag Structure
 
-### Look-ahead and Look-behind
+An HTML tag has the following structure:
+- An opening tag starts with < and ends with >.
+- The closing tag starts with </ and ends with >.
+For example, here is an HTML tag structure:
+‘<p>This HTML tags is considered as a paragraph.</p>’
+In the example, ‘<p>’ will be the opening tag, and ‘</p>’ will be the closing tag.
 
-Regular expressions' look ahead and look behind capabilities enable the handling of matches. In particular, I looked at the look-ahead and look-behind zero-length assertions on the website regex buddy, which also claims to be a regular Dash expression.info. Look ahead and look behind assertions, often referred to as look around assertions, are comparable to a line's beginning and end or anchors. However, characters can be matched by looking about, and they then either produce a match or no match result.
+### Matching HTML Tags with a Regex
+To match HTML tags with a regex, we can use the following pattern:
+/^<([a-z]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$/
+- ‘/^’ and ‘$/’: These are the start and end anchors. They ensure that the regex matches the entire string from the beginning to the end.
+- ‘<’ and ‘>’: These characters match the opening and closing angle brackets of HTML tags.
 
-### Greedy and Lazy Match
 
-/^#`?`([a-f0-9]{6}|[a-f0-9]{3})$/  
-A greedy match tries to match an element as many times as possible. Whereas, a lazy match tries to match an element as few times as possible. In our example we have `?` which signifies lazy quantifier. This is referred to a lazy quantifier because it causes the regular expression engine to match as few occurances as possible. We can simply turn this lazy match into a greedy one by adding a `?`.
+## Author
+
+Hi I'm Eric Enriquez, I'm a full-stack developer student looking to succeed and dominate the web.  
+GitHub: [Eric-JG](https://github.com/Eric-JG)
+# Regex Tutorial: MATCHING AN HTML TAG 
+
+In this tutorial, we will learn how to use a regular expression (regex) to match an HTML tag. HTML tags are fundamental elements in web development, and understanding how to match them using regex can be a powerful tool.
+
+## Summary
+Today I will be covering and breaking down the components of a regular expression used to match HTML tag. HTML tags are used to structure the content of a web page. They consist of an opening tag, content, and a closing tag. Matching HTML tags with regex can be useful for parsing and extracting data from web pages or validating HTML content.
+/^<([a-z]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$/
+
+## Table of Contents
+
+- [The HTML Tag Structure](#the-html-tag-structure)
+- [Greedy and Lazy Match](#greedy-and-lazy-match)
+
+## Regex Components
+
+
+### The HTML Tag Structure
+
+An HTML tag has the following structure:
+- An opening tag starts with < and ends with >.
+- The closing tag starts with </ and ends with >.
+For example, here is an HTML tag structure:
+‘<p>This HTML tags is considered as a paragraph.</p>’
+In the example, ‘<p>’ will be the opening tag, and ‘</p>’ will be the closing tag.
+
+### Matching HTML Tags with a Regex
+To match HTML tags with a regex, we can use the following pattern:
+/^<([a-z]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$/
+- ‘/^’ and ‘$/’: These are the start and end anchors. They ensure that the regex matches the entire string from the beginning to the end.
+- ‘<’ and ‘>’: These characters match the opening and closing angle brackets of HTML tags.
+
 
 ## Author
 
