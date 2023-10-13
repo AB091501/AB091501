@@ -26,7 +26,7 @@ In the example, `<p>` will be the opening tag, and `</p>` will be the closing ta
 ### Matching HTML Tags with a Regex
 To match HTML tags with a regex, we can use the following pattern:
 /^<([a-z]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$/
-- `/^` and `$/`: These are the start and end anchors. They ensure that the regex matches the entire string from the beginning to the end.
+- `'/^'` and `$/`: These are the start and end anchors. They ensure that the regex matches the entire string from the beginning to the end.
 - `<` and `>`: These characters match the opening and closing angle brackets of HTML tags.
 
 
