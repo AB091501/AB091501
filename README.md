@@ -21,13 +21,20 @@ An HTML tag has the following structure:
 - The closing tag starts with </ and ends with >.
 For example, here is an HTML tag structure:
 `<p>This HTML tags is considered as a paragraph.</p>`
-In the example, `<p>` will be the opening tag, and `</p>` will be the closing tag.
+In the example, `’<p>’` will be the opening tag, and `’</p>’` will be the closing tag.
 
 ### Matching HTML Tags with a Regex
 To match HTML tags with a regex, we can use the following pattern:
 /^<([a-z]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$/
-- `'/^'` and `$/`: These are the start and end anchors. They ensure that the regex matches the entire string from the beginning to the end.
-- `<` and `>`: These characters match the opening and closing angle brackets of HTML tags.
+- `’/^’` and `’$/’`: These are the start and end anchors. They ensure that the regex matches the entire string from the beginning to the end.
+- `’<’` and `’>’`: These characters match the opening and closing angle brackets of HTML tags.                                 
+- `’([a-z]+)’`: This part matches the tag name. `’[a-z]+’` specifies that the tag name consists of one or more lowercase letters.
+- `’([^<]+)*’`: This section matches any attributes within the opening tag. `’[^<]+’` means it can match one or more characters that are not `’<’`.
+- `’(?:> and <\/\1>|\s+\/>)’`: This part is more complex and handles the closing tag or self-closing tag of the HTML element.
+- `’(?:>’`: This part captures the closing > of the opening tag.
+- `’(.*)’`: This part captures the content between the opening and closing tags. It uses `’.*’` to match any characters (zero or more) between the tags.
+- `’<\/\1>’`: This part matches the corresponding closing tag using a backreference `’\1’`. The `’\1’` refers back to the captured tag name, ensuring that the opening and closing tags match.
+- `’|\s+\/>)’`: Alternatively, this part matches a self-closing tag with a space and a forward slash (e.g., `’<img />)’`.
 
 
 ## Author
