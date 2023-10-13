@@ -9,7 +9,7 @@ Today I will be covering and breaking down the components of a regular expressio
 ## Table of Contents
 
 - [The HTML Tag Structure](#the-html-tag-structure)
-- [Greedy and Lazy Match](#greedy-and-lazy-match)
+- [Matching HTML Tags with a Regex](#matching-html-tags-with-a-regex)
 
 ## Regex Components
 
@@ -20,14 +20,14 @@ An HTML tag has the following structure:
 - An opening tag starts with < and ends with >.
 - The closing tag starts with </ and ends with >.
 For example, here is an HTML tag structure:
-‘<p>This HTML tags is considered as a paragraph.</p>’
-In the example, ‘<p>’ will be the opening tag, and ‘</p>’ will be the closing tag.
+`<p>This HTML tags is considered as a paragraph.</p>`
+In the example, `<p>` will be the opening tag, and `</p>` will be the closing tag.
 
 ### Matching HTML Tags with a Regex
 To match HTML tags with a regex, we can use the following pattern:
 /^<([a-z]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$/
-- ‘/^’ and ‘$/’: These are the start and end anchors. They ensure that the regex matches the entire string from the beginning to the end.
-- ‘<’ and ‘>’: These characters match the opening and closing angle brackets of HTML tags.
+- `/^` and `$/`: These are the start and end anchors. They ensure that the regex matches the entire string from the beginning to the end.
+- `<` and `>`: These characters match the opening and closing angle brackets of HTML tags.
 
 
 ## Author
