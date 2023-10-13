@@ -34,7 +34,7 @@ To match HTML tags with a regex, we can use the following pattern:
 - `’(?:>’`: This part captures the closing > of the opening tag.
 - `’(.*)’`: This part captures the content between the opening and closing tags. It uses `’.*’` to match any characters (zero or more) between the tags.
 - `’<\/\1>’`: This part matches the corresponding closing tag using a backreference `’\1’`. The `’\1’` refers back to the captured tag name, ensuring that the opening and closing tags match.
-- `’|\s+\/>)’`: Alternatively, this part matches a self-closing tag with a space and a forward slash (e.g., `’<img />)’`.
+- `'|\s+\/>)'`: Alternatively, this part matches a self-closing tag with a space and a forward slash (e.g., `’<img />)’`.
 
 
 ## Author
